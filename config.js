@@ -46,12 +46,12 @@ config = {
     // Configure your URL and mail settings here
     production: {
         //url: 'http://my-ghost-blog.com',
-        url: 'http://127.0.0.1:2368',
+        url: 'http://www.caseyflynn.com',
         mail: {},
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                filename: path.join(__dirname, '/content/data/ghost-dev.db')
             },
             debug: false
         },
