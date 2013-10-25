@@ -137,7 +137,7 @@ body.dark {color:#eee; background: #1b1b1b;}
 .dark .tooltip.right .tooltip-arrow {border-right-color: #fff;}
 .dark .tooltip.left .tooltip-arrow {border-left-color: #fff;}
 .dark .tooltip.bottom .tooltip-arrow {border-bottom-color: #fff;}
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {color: #fff;} 
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {color: #fff;}
 .dark hr {border-top: 1px solid #111;border-bottom: 1px solid #222;}
 .dark .progress {background: #000; background-image: linear-gradient(to bottom, #191919, #111)}
 .dark .alert-danger h4, .dark .alert-error h4{color: #B94A48;}
@@ -154,7 +154,7 @@ body.dark {color:#eee; background: #1b1b1b;}
 .dark .skills .label, .dark .hobbies .label {background: #333; color: #fff;}
 .dark .blogmeta .glyphicons i:before {color: #ccc;}
 
-/**** CSS TRANSITIONS ****/ 
+/**** CSS TRANSITIONS ****/
 
 * {
 -webkit-transition-duration: 0.20s;
@@ -228,7 +228,7 @@ body.dark {color:#eee; background: #1b1b1b;}
 	#footer {padding-top: 10px;}
 
 }
- 
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	#main-navbar {margin-bottom: 0; position: fixed; top: 0;}
@@ -261,7 +261,7 @@ body.dark {color:#eee; background: #1b1b1b;}
 	#footer {padding-top: 10px;}
 
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	h1 {margin-top: 20px;}
@@ -284,12 +284,12 @@ body.dark {color:#eee; background: #1b1b1b;}
 	.timeline {background-position: center center;}
 	.timeline-item-content h3 {font-size: 20px;}
 	.timeline-item-date, .timeline-item-content, .timeline-item-trigger {
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: block;
-	width: 100%; 
-	float: none; 
+	width: 100%;
+	float: none;
 	text-align: center;
 	margin: 5px 0;
 	}
@@ -300,7 +300,7 @@ body.dark {color:#eee; background: #1b1b1b;}
 	.section .section-title {border-right: none!important;}
 	.timeline-arrow {text-align: center; height: 0;}
 	.timeline-arrow i {
-	position: relative; 
+	position: relative;
 	display: inline-block;
 	top: -4px;
 	left: auto;
@@ -317,7 +317,7 @@ body.dark {color:#eee; background: #1b1b1b;}
 	.testimonial {margin-bottom: 0;}
 	.skills .span2 {margin-bottom: 10px;}
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	.blogitem .blogitem-hoverinfo, .portfolioitem .portfolioitem-hoverinfo {padding: 20px;}
