@@ -1,0 +1,164 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+
+<div class="navbar navbar-inverse navbar-fixed-top visible-phone noprint" id="phone-navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Casey Flynn</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/#about-me" class="">About me</a></li>
+          <li><a href="/#personal-information" class="">Personal Info</a></li>
+          <li><a href="/#employment" class="">Employment</a></li>
+          <li><a href="/#education" class="">Education</a></li>
+          <li><a href="/#skills" class="">Skills</a></li>
+          <li><a href="/#portfolio" class="">Portfolio</a></li>
+          <li><a href="/blog" class="">Blog</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div><!--/#phone-navbar -->
+
+<div class="container">
+      <div class="row" id="content" style="">
+
+
+
+        <!-- If you want the sidebar placed on the left, place it just after this and change the sbright class by sbleft -->
+
+
+        <!-- MAIN CONTENT -->
+        <div class="span9 equal" id="main-content">
+
+          <div class="tools noprint visible-desktop">
+        <a href="javascript:if(window.print)window.print()" title="Print" data-placement="bottom" class="tips glyphicons print"><i></i></a>
+        <a href="/assets/Casey_Flynn_Resume.pdf" title="Download" data-placement="bottom" class="tips glyphicons file_import"><i></i></a>
+      </div>
+
+
+    <span class="clear"></span>
+
+    <div
+      style = "margin-top:15px;"
+      class = "section noprint"
+      id    = "blog">
+
+
+
+      <div class="row" id="full-blog-items" style="font-size:16px; line-height:22px;">
+        <div class="span9">
+
+
+
+
+
+
+          <!-- This is a blog item -->
+          <div class="blogitem-content" id="blogitem-1">
+
+            {{#if false}}
+            <img src="/images/<%= image %>" alt="">
+            {{/if}}
+
+            <h2 class="primary-color">{{{post.title}}}</h2>
+
+            {{#post}}
+
+              <div class="blogmeta muted">
+                <div><span class="glyphicons user"><i></i></span>{{@blog.title}}</div>
+                <div><span class="glyphicons calendar"><i></i></span>{{date format="DD MMM YYYY"}}</div>
+
+                {{#if tags}}
+                  <div><span class="glyphicons tags"><i></i></span>{{tags separator=", "}}</div>
+                {{/if}}
+
+              </div>
+              <p style="">{{content}}</p>
+
+
+
+              <br>
+              <section class="share">
+                  <h4>Share this post</h4>
+                  <a class="glyphicons twitter white" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+                      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                      <i></i>
+                      <span class="hidden">Twitter</span>
+                  </a>
+                  <a class="glyphicons facebook white" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                      <i></i>
+                      <span class="hidden">Facebook</span>
+                  </a>
+                  <a class="glyphicons google_plus white" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                      <i></i>
+                      <span class="hidden">Google+</span>
+                  </a>
+              </section>
+              <br>
+
+
+
+
+            {{/post}}
+
+
+          </div>
+          <!-- / Blog item -->
+
+
+
+
+
+
+        </div><!--/span9-->
+      </div><!--/row-->
+
+    </div><!--/section-->
+    <span class="clear"></span>
+
+
+
+
+
+        </div><!--/span9-->
+        <!-- END OF THE MAIN CONTENT -->
+
+        <!-- Sidebar placed on the RIGHT of the screen -->
+        <div class="span3 sbright noprint" id="sidebar">
+          <div class="sidebar-nav equal hidden-phone">
+
+
+            <ul class="nav nav-list affix" id="resumenav">
+              <li><a href="/#about-me" class="">About me</a></li>
+              <li><a href="/#personal-information" class="">Personal Info</a></li>
+              <li><a href="/#employment" class="">Employment</a></li>
+              <li><a href="/#education" class="">Education</a></li>
+              <li><a href="/#skills" class="">Skills</a></li>
+              <li><a href="/#portfolio" class="">Portfolio</a></li>
+              <li class = "active"><a href="/#blog" class="">Blog</a></li>
+            </ul>
+
+          </div><!--/sidebar-nav -->
+
+          <span class="clear"></span>
+
+        </div><!--/span3 -->
+
+    </div><!--/row-->
+
+    <div id="footer">
+    <p>&copy; Casey Flynn - 2013</p>
+    </div>
+
+</div><!--/.container-->
