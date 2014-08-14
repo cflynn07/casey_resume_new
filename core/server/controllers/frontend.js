@@ -17,6 +17,9 @@ var Ghost  = require('../../ghost'),
     frontendControllers;
 
 frontendControllers = {
+    'aboutMe': function (req, res, next) {
+      res.end('fin');
+    },
     'homepage': function (req, res, next) {
         // Parse the page number
         var pageParam = req.params.page !== undefined ? parseInt(req.params.page, 10) : 1,
